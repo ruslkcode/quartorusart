@@ -8,6 +8,13 @@ public class Piece {
     private final Colour colour;
     private final Fill fill;
 
+    /*@
+      private invariant size != null;
+      private invariant shape != null;
+      private invariant colour != null;
+      private invariant fill != null;
+    @*/
+
     /**
      * Constructs the object Piece.
      * @param size the size of the piece.
@@ -25,6 +32,7 @@ public class Piece {
     /**
      * @return the shape of the current piece.
      */
+    /*@ ensures \result == size; @*/
     public Size getSize() {
         return size;
     }
@@ -32,7 +40,7 @@ public class Piece {
     /**
      * @return the shape of the current piece.
      */
-
+    /*@ ensures \result == shape; @*/
     public Shape getShape() {
         return shape;
     }
@@ -40,6 +48,7 @@ public class Piece {
     /**
      * @return the colour of the current piece.
      */
+    /*@ ensures \result == colour; @*/
     public Colour getColour() {
         return colour;
     }
@@ -47,6 +56,7 @@ public class Piece {
     /**
      * @return the fill of the current piece.
      */
+    /*@ ensures \result == fill; @*/
     public Fill getFill() {
         return fill;
     }
