@@ -36,7 +36,7 @@ public class ServerConnection extends SocketConnection {
             }
             String[] parts = message.split(Protocol.SEPARATOR, 2);
             if (parts.length < 2) {
-                return; // ignore invalid message
+                return;
             }
             String command = parts[0];
             String payload = parts[1];

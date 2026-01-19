@@ -61,5 +61,5 @@ public abstract class SocketServer {
      * @param socket the socket for the connection
      * @return the connection handler
      */
-    protected abstract void handleConnection(Socket socket);
+    protected abstract void handleConnection(Socket socket) throws IOException;
 }
