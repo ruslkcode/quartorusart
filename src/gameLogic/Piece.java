@@ -7,7 +7,6 @@ public class Piece {
     private final Shape shape;
     private final Colour colour;
     private final Fill fill;
-    public enum FieldFill {PIECE, EMPTY}
 
     /**
      * Constructs the object Piece.
