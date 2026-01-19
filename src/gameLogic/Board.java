@@ -1,7 +1,7 @@
 package gameLogic;
 
 public class Board {
-    private int DIM;
+    private final int DIM = 4 * 4;
     private Piece[] fields;
 
 
